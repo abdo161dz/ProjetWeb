@@ -1,0 +1,141 @@
+
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  direction: ltr; /* Text direction اتجاه النص */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+}
+/* End Global Rules */
+
+.landing {
+  display: flex; /* Use flexbox for layout استخدام فليكس بوكس للتخطيط */
+  justify-content: center; /* Center content horizontally محاذاة المحتوى في المنتصف */
+  align-items: center; /* Center content vertically محاذاة المحتوى عمودياً */
+  height: 40vh; /* Full viewport height ارتفاع كامل للنافذة */
+  background-color: #ecf0f1; /* Background color لون الخلفية */
+
+}
+.landing h1 {
+  font-size: 2.5rem; /* Font size حجم الخط */
+  color: #2CA9C1; /* Text color لون النص */
+  text-align: center; /* Center text محاذاة النص في المنتصف */
+  margin: 0; /* Remove default margin إزالة الهوامش الافتراضية */
+}
+.landing p {
+  font-size: 1.2rem; /* Font size حجم الخط */
+  color: #131313; /* Text color لون النص */
+  text-align: center; /* Center text محاذاة النص في المنتصف */
+  margin-top: 10px; /* Space above the paragraph المسافة فوق الفقرة */
+}
+
+
+
+.background {
+  background-color:#2CA9C1; /* Background color لون الخلفية */  
+  height: 60vh;
+
+  
+}
+
+/* Search Bar */
+
+.search-container {
+  display: flex; /* Use flexbox for layout استخدام فليكس بوكس للتخطيط */
+  align-items: center; /* Center items vertically محاذاة العناصر عمودياً */
+  background-color: #fff; /* Background color لون الخلفية */
+  border: 1px solid #ccc; /* Border color لون الإطار */
+  border-radius: 30px; /* Rounded corners زوايا مدورة */
+  padding: 5px 10px; /* Padding for container حواف الحاوية */
+  width: 600px; /* Width of the search bar عرض شريط البحث */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow effect تأثير الظل */
+  padding-left: 15px; /* Left padding حواف اليسار */
+  padding-right: 15px; /* Right padding حواف اليمين */
+  
+  margin-left: auto; /* Center the search bar in the container محاذاة شريط البحث في المنتصف */
+  margin-right: auto; /* Center the search bar in the container محاذاة شريط البحث في المنتصف */
+}
+
+.search-container input {
+  border: none;  /* Remove default border إزالة الإطار */
+  outline: none;  /* Remove default outline إلغاء الخط الأزرق أو الأسود الذي يظهر حول المربع عند النقر عليه */
+  font-size: 16px; /* Font size حجم الخط */
+  padding: 10px; /* Padding for input حواف المدخل */
+  flex: 1; /* Allow input to grow and fill space السماح للمدخل بالنمو وملء المساحة */
+  border-radius: 30px; /* Rounded corners زوايا مدورة */
+}
+
+.search-container button {
+  background-color: #007bff; /* Button color لون الزر */
+  color: white; /* Text color لون النص */
+  border: none; /* Remove default border إزالة الإطار الافتراضي */
+  padding: 8px 15px; /* Padding for button حواف الزر */
+  border-radius: 20px; /* Rounded corners زوايا مدورة */
+  cursor: pointer; /* Pointer cursor شكل المؤشر */
+  font-size: 14px; /* Font size حجم الخط */
+  transition: background-color 0.3s; /* Transition effect تأثير الانتقال */
+}
+
+.search-container button:hover {
+  background-color: #0056b3; /* Darker shade on hover ظل أغمق عند التمرير فوقه */
+}
+
+.search-container i {
+  margin-left: 8px; /* Space between icon and text مسافة بين الأيقونة والنص */
+  color: #888; /* Icon color لون الأيقونة */
+}
+
+#result {
+  margin-top: 20px; /* Space above the result المسافة فوق النتيجة */
+  font-size: 18px; /* Font size حجم الخط */
+  color: #333; /* Text color لون النص */
+}
+
+
+@media (max-width: 768px) {
+    .search-container {
+        width: 750px;
+    }
+}
+
+@media (max-width: 992px) {
+    .search-container {
+        width: 970px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .search-container {
+        width: 1170px;
+    }
+}
+
+
+.result {
+  margin-top: 20px; /* Space above the result المسافة فوق النتيجة */
+  padding: 15px; /* Padding for result حواف النتيجة */
+  background: white; /* Background color لون الخلفية */
+  border: 1px solid #ccc; /* Border color لون الإطار */
+  border-radius: 10px; /* Rounded corners زوايا مدورة */
+}
+
+h2 {
+  margin-top: 0; /* Remove default margin إزالة الهوامش الافتراضية */
+  direction: ltr;
+}
+
+.key {
+  font-weight: bold;
+  color: #0055aa;
+  direction: ltr;
+}
+
+
+

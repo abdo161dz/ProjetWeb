@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter URL</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to CSS file -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Link to normalize of css file -->
+    
+    <!--هذا الخط المستعمل-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Start Header -->
+     <div class="landing">
+        <div class="intro-text">
+            <h1>Hello</h1>
+            <p>Put the URL in the box for analysis</p>
+        </div>
+     </div>
+    <!--End Header-->
+    <div class="background">
+        <div class="middle blue">
+            <div class="search-container">
+            <i class="material-icons"></i>
+            <input type="text" id="urlInput" placeholder="enter URL...">
+            <button onclick="analyzeURL()">analysis</button>   <!--هنا حط الدالة لي تحليل الروابط-->
+        </div>
+    </div>
+
+    
+
+    <div id="output" class="result" style="display: none;"></div>
+
+    <script src="javascript/script.js" defer></script>
+    <!-- End Header -->
+</body>
+</html>
